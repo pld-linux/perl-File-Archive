@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	File
 %define	pnam	Archive
-Summary:	File-Archive perl module
-Summary(pl):	Modu³ perla File-Archive
+Summary:	File::Archive perl module
+Summary(pl):	Modu³ perla File::Archive
 Name:		perl-File-Archive
 Version:	0.53
 Release:	6
@@ -17,10 +17,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-File-Archive - Figure out what is in an archive file.
+File::Archive - Figure out what is in an archive file.
 
 %description -l pl
-File-Archive umo¿liwia przegl±danie zawarto¶ci archiwów.
+File::Archive umo¿liwia przegl±danie zawarto¶ci archiwów.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
