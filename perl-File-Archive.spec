@@ -2,9 +2,9 @@
 Summary:	File-Archive perl module
 Summary(pl):	Modu³ perla File-Archive
 Name:		perl-File-Archive
-Version:	0.52
-Release:	3
-Copyright:	GPL
+Version:	0.53
+Release:	1
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/File/File-Archive-%{version}.tar.gz
