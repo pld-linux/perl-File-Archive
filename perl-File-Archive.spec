@@ -1,4 +1,3 @@
-\# $Revision: 1.8 $, $Date: 2001-01-02 19:00:42 $
 %include	/usr/lib/rpm/macros.perl
 Summary:	File-Archive perl module
 Summary(pl):	Modu³ perla File-Archive
