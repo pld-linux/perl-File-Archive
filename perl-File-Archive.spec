@@ -1,12 +1,12 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	File
 %define	pnam	Archive
-Summary:	File::Archive perl module
-Summary(pl):	Modu³ perla File::Archive
+Summary:	File::Archive - figure out what is in an archive file
+Summary(pl):	File::Archive - przegl±danie, co jest w pliku archiwum
 Name:		perl-File-Archive
 Version:	0.53
 Release:	7
-License:	GPL
+License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	6d61787275af3627af4eb92bae6f7527
@@ -18,10 +18,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-File::Archive - Figure out what is in an archive file.
+File::Archive Perl module for figuring out what is in an archive file.
 
 %description -l pl
-File::Archive umo¿liwia przegl±danie zawarto¶ci archiwów.
+Modu³ Perla File::Archive umo¿liwia przegl±danie zawarto¶ci archiwów.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
