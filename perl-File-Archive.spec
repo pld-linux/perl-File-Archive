@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	File
 %define	pnam	Archive
-%include	/usr/lib/rpm/macros.perl
 Summary:	File-Archive perl module
 Summary(pl):	Modu³ perla File-Archive
 Name:		perl-File-Archive
 Version:	0.53
-Release:	5
-
+Release:	6
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -24,7 +23,7 @@ File-Archive - Figure out what is in an archive file.
 File-Archive umo¿liwia przegl±danie zawarto¶ci archiwów.
 
 %prep
-%setup -q -n File-Archive-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
