@@ -1,15 +1,17 @@
+\# $Revision: 1.8 $, $Date: 2001-01-02 19:00:42 $
 %include	/usr/lib/rpm/macros.perl
 Summary:	File-Archive perl module
 Summary(pl):	Modu³ perla File-Archive
 Name:		perl-File-Archive
 Version:	0.53
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
+Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/File/File-Archive-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
-BuildRequires:	perl >= 5.005_03-14
+BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Archive-Tar
 BuildRequires:	perl-Compress-Zlib
 %requires_eq	perl
@@ -31,25 +33,16 @@ perl Makefile.PL
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-(
-  cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/File/Archive
-  sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv .packlist.new .packlist
-)
-
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
-        Changes *txt
+gzip -9nf Changes *txt
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {Changes,README.txt}.gz
-
+%doc *.gz
 %{perl_sitelib}/File/Archive.pm
-%{perl_sitearch}/auto/File/Archive
-
 %{_mandir}/man3/*
