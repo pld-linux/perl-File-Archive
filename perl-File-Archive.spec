@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	File
-%define	pnam	Archive
+%define		pdir	File
+%define		pnam	Archive
 Summary:	File::Archive - figure out what is in an archive file
 Summary(pl):	File::Archive - przegl±danie, co jest w pliku archiwum
 Name:		perl-File-Archive
