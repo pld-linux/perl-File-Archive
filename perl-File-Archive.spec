@@ -3,7 +3,7 @@ Summary:	File-Archive perl module
 Summary(pl):	Modu³ perla File-Archive
 Name:		perl-File-Archive
 Version:	0.53
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -13,6 +13,7 @@ BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Archive-Tar
 BuildRequires:	perl-Compress-Zlib
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
