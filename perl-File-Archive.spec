@@ -27,7 +27,7 @@ File-Archive umo¿liwia przegl±danie zawarto¶ci archiwów.
 
 %build
 perl Makefile.PL
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
