@@ -6,7 +6,7 @@
 %define		pdir	File
 %define		pnam	Archive
 Summary:	File::Archive - figure out what is in an archive file
-Summary(pl):	File::Archive - przegl±danie, co jest w pliku archiwum
+Summary(pl.UTF-8):   File::Archive - przeglƒÖdanie, co jest w pliku archiwum
 Name:		perl-File-Archive
 Version:	0.53
 Release:	9
@@ -24,8 +24,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 File::Archive Perl module for figuring out what is in an archive file.
 
-%description -l pl
-Modu≥ Perla File::Archive umoøliwia przegl±danie zawarto∂ci archiwÛw.
+%description -l pl.UTF-8
+Modu≈Ç Perla File::Archive umo≈ºliwia przeglƒÖdanie zawarto≈õci archiw√≥w.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
