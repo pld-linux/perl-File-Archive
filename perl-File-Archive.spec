@@ -9,7 +9,7 @@ Summary:	File::Archive - figure out what is in an archive file
 Summary(pl.UTF-8):	File::Archive - przeglądanie, co jest w pliku archiwum
 Name:		perl-File-Archive
 Version:	0.53
-Release:	9
+Release:	10
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
