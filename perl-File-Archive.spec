@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	File
 %define		pnam	Archive
+%include	/usr/lib/rpm/macros.perl
 Summary:	File::Archive - figure out what is in an archive file
 Summary(pl.UTF-8):	File::Archive - przeglądanie, co jest w pliku archiwum
 Name:		perl-File-Archive
@@ -14,10 +14,11 @@ License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	6d61787275af3627af4eb92bae6f7527
-BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-devel >= 1:5.8.0
+URL:		http://search.cpan.org/dist/File-Archive/
 BuildRequires:	perl-Archive-Tar >= 1.08-2
 BuildRequires:	perl-Compress-Zlib
+BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
