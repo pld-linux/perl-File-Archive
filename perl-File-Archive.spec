@@ -4,7 +4,6 @@
 
 %define		pdir	File
 %define		pnam	Archive
-%include	/usr/lib/rpm/macros.perl
 Summary:	File::Archive - figure out what is in an archive file
 Summary(pl.UTF-8):	File::Archive - przeglądanie, co jest w pliku archiwum
 Name:		perl-File-Archive
